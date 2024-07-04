@@ -21,6 +21,8 @@
 <input type=text name=proveedor values="Ingrese proveedor" require>
 <input type=number name=cuit values="ingrese cuit del prov" require>
 <input type=text name=direccion values="Ingrese direccion" require>
+<input type=number name=celular value="danos tu movil" require>
+<input type=text name=npila  valu="nombre de pila">
 <br><br>
 <input type=submit values="Enviar" require>
 
