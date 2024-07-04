@@ -1,0 +1,41 @@
+body{
+
+    background-color: bisque;
+     background: url("jacuzzi1.jpg");
+     background-size:cover;
+     
+
+}
+
+button{
+
+    background-color: blueviolet;
+    border-color: brown;
+    border:20px;
+    padding:10px 10px;
+
+}
+
+
+h1{
+    color: darkmagenta;
+     padding: 25px 20px;
+}
+
+h2{
+
+    color: rgb(255, 0, 55);
+}
+
+h3{
+     background-color: beige;
+    color:blue;
+    padding:35px 30px;
+
+}
+
+h4{
+    background-color: blue;
+    color: rgb(0, 38, 255)
+    padding:35px 30px;
+}
