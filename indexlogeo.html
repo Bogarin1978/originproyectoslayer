@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link rel="stylesheet"  href="style.css">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+<body>
+
+<scrip  src="js/bootstrap.min.js"></scrip>
+
+<h1>INICIAR Sesion</h1>
+    <form action=login.php method=GET>
+        <input type=text name=usuario placeholder="ingrese su usuario" required>
+        <input type=password name=pass placeholder="ingrese su contraseña" required>
+        <input type=submit value="Iniciar Sesion">
+    </form>
+    <form>
+        <?php
+        if(isset($_GET['nousuario'])){
+            echo "no existe el usuario .$_GET['nousuario']. en el bd"
+        }
+        else{
+            if(isset($_GET ['usuario'])){
+            
+                
+
+            }
+        }
+    ?>
+</body>
+</html>
