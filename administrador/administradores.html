@@ -18,22 +18,36 @@
 
 
 <form action="altasproveedor.php" method=POST>
-    PROVEEDOR
+    <h1>PROVEDOR</h1>
+    <br>
 <input type=text name=proveedor placeholder="Ingrese proveedor" require><br>
-INGRESE CUIT:
+<h2>INGRESE CUIT</h2>
+<br>
 <input type=number name=cuit placeholder="ingrese cuit del prov" require><br>
-DOMICILIO:
-<input type=text name=direccion placeholder="Ingrese direccion" require><br>
-EMAIL
-<input type=number name=email placeholder="danos tu mail" require><br>
+<h2>DOMICILIO</h2>
+<br>
 
+<input type=text name=direccion placeholder="Ingrese direccion" require><br>
+<h2>INGRESE EMAIL</h2>
+<br>
+<input type=number name=email placeholder="danos tu mail" require><br>
+<h2>TELEFONO</h2>
+<br>
 <input type=text name=telefono  placeholder="ingrese telefono"><br>
+<h2>ENVIAR DATOS </h2>
 <input type=submit values="Enviar" require><br>
 
 <br><br>
 <form action="altasproductos.php" method=POST>
-    <input type=text name=producto placeholder="ingrese el nombre del producto"><br>
-    <inpujt type=number name=codigo placelder="ingrese el codigo">
+   <h2> INGRESE NOMBRE DEL PRODUCTO :</h2><br>
+    <input type=text name="producto" placeholder="ingrese el nombre del producto"><br>
+  <h2> INGRESE CODIGO DEL PRODUCTO:</h2><br>
+    <input type=number name=codigo placelder="ingrese el codigo"><br>
+    <h2>DESCRIPCION DEL PRODUCTO</h2><br>
+    <input type="text" name="descripcion" placeholder="descripcion del producto">
+   <br><br>
+   <input type=submit values="EnviarDatos"  requiere>
+
 </body>
 </html>
 

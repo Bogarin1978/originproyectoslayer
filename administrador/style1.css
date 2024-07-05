@@ -1,6 +1,32 @@
 body{
 
-    background: url("administracion.jpg");
+    background: url("logoeasy1.jpg");
     background-size: cover ;
 
+}
+title{
+
+    color: azure;
+}
+
+h1{
+    color: darkblue;
+}
+h2{
+    color: darkblue;
+}
+h3{
+    color: aqua;
+}
+h4{
+    color: aqua;
+}
+h5{
+    color: aqua;
+}
+h5{
+    color: aqua;
+}
+h6{
+    color: aqua;
 }
