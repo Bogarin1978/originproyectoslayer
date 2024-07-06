@@ -16,7 +16,7 @@
 <scrip  src="js/bootstrap.min.js"></scrip>
 
 <h1>INICIAR Sesion</h1>
-    <form action=login.php method=GET>
+    <form action=logineasy.php method=GET>
         Ingrese el EMAIL:<br>
         <input type=text name=usuario placeholder="ingrese su usuario" required><br>
         Ingrese password:<br>
@@ -25,17 +25,6 @@
         <input type=submit value="Iniciar Sesion">
     </form>
     <form>
-        <?php
-        if(isset($_GET['nousuario'])){
-            echo "no existe el usuario .$_GET['nousuario']. en el bd"
-        }
-        else{
-            if(isset($_GET ['usuario'])){
-            
-                
-
-            }
-        }
-    ?>
+       
 </body>
 </html>

@@ -9,7 +9,7 @@ body{
 
 button{
 
-    background-color: blueviolet;
+    background-color: aliceblue;
     border-color: brown;
     border:20px;
     padding:10px 10px;
@@ -18,13 +18,14 @@ button{
 
 
 h1{
-    color: darkmagenta;
+    color: red;
      padding: 25px 20px;
 }
 
 h2{
 
     color: rgb(255, 0, 55);
+    background-color: beige;
 }
 
 h3{
@@ -35,7 +36,10 @@ h3{
 }
 
 h4{
-    background-color: blue;
+    background-color: aliceblue;
     color: rgb(0, 38, 255)
     padding:35px 30px;
+}
+h5{
+    background-color: aliceblue;
 }

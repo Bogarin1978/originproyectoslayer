@@ -1,12 +1,16 @@
 <?php
+
+require "indexlogeo.html";
+require "conectar.php";
+
 $usuario=$_POST['usuario'];
 $pass=$_POST['password'];
 
-require "conectar.php";
+
 
 $conn=conectar();
 
-$sql="select * from usuarios where usuario='$usuario';";
+$sql="select * from usereasy where usuario='$usuario';";
 
 $resultados=mysqli_query($conect, $sql);
 
