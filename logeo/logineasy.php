@@ -3,36 +3,38 @@
 require "indexlogeo.html";
 require "conectar.php";
 
-$usuario=$_POST['usuario'];
-$pass=$_POST['password'];
+
+$rol=$_post['rol']
+$user=$_POST['email'];
+$password=$_POST['password'];
 
 
 
 $conn=conectar();
 
-$sql="select * from usereasy where usuario='$usuario';";
+$sql="select * from usereasy where useEmail='$user';";
 
 $resultados=mysqli_query($conect, $sql);
 
 if(mysqli_affected_rows($conn)>0){
     $registro=mysqli_fecth_assoc($resultado);
 
-    if($registro['pass']==$pass){
+    if($registro['passsord']==$password){
         
         session_start();
 
         $_SESSION['id']=$registro['id'];
         $_SESSION['nombre']=$registro['nombre']." ".$registro['apellido'];
-        $_SESSION['usuario']=$registro['usuario']
+        $_SESSION['email']=$registro['email'];
         $_SESSION['tipo']=$registro['rol'];
 
-        swicth($_SESSION['tipo']){
+        swicth($_SESSION['rol']){
             case 1:
-                header("location: admin.php")
+                header("location: administradores.html")
             break
 
             case 2:
-                header("location;cliente.php")
+                header("location;clientes.html")
             break
 
             case 3:
@@ -49,6 +51,6 @@ if(mysqli_affected_rows($conn)>0){
 
 }
  else{
-    header ("location: index.php?nousuario=$usuario");
+    header ("location: index.html?nousuario=$usuario");
  }
 ?>

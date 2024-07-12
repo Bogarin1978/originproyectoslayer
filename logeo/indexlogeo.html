@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>indexlogeo</title>
 </head>
 
 <link rel="stylesheet"  href="style3.css">
@@ -17,8 +17,10 @@
 
 <h1>INICIAR Sesion</h1>
     <form action=logineasy.php method=GET>
+        INDIQUE SI ES CLIENTE O ADMINISTRADOR:<br>
+        <input type="number" name=rol placeholder="1 si es administrador 2 si es cliente" require><br>
         Ingrese el EMAIL:<br>
-        <input type=text name=usuario placeholder="ingrese su usuario" required><br>
+        <input type=text name=email placeholder="ingrese su usuario" required><br>
         Ingrese password:<br>
         <input type=password name=pass placeholder="ingrese su contraseña" required>
         <br>
