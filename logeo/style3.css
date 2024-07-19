@@ -2,6 +2,12 @@ body{
 
   background-color: antiquewhite;
   background:url("easyboton.jpg");
+  color: darkred;
   
 
+}
+h1{
+  color: darkred;
+  font-size: 30px;
+  
 }
