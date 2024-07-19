@@ -37,15 +37,33 @@
 <h2>ENVIAR DATOS </h2>
 <input type=submit values="Enviar" require><br>
 
-<br><br>
+<br><br>   
 <form action="altasproductos.php" method=POST>
    <h2> INGRESE NOMBRE DEL PRODUCTO :</h2><br>
     <input type=text name="producto" placeholder="ingrese el nombre del producto"><br>
   <h2> INGRESE CODIGO DEL PRODUCTO:</h2><br>
     <input type=number name=codigo placelder="ingrese el codigo"><br>
-    <h2>DESCRIPCION DEL PRODUCTO</h2><br>
-    <input type="text" name="descripcion" placeholder="descripcion del producto">
-   <br><br>
+    <h2>MARCA DEL PRODUCTO</h2><br>
+    <input type="text" name="marca" placeholder="Marca del producto"><br>
+    <h2>MODELO DEL PRODUCTO</h2><br>
+    <input type="text"  name="modelo"  placeholder="Ingrese modelo del producto" require>
+   <br>
+   <h2>PRECIO DEL PRODUCTO</h2><br>
+   <input type=number  name=precio >="Ingrese el precio del producto" require><br>
+
+   <h2>STOCK ACTUAL</h2><br>
+   <input type=number name=stockactual placeholder="Ingrese el stock acual" require>
+    <br>
+    <h2>STOCK MINIMO</h2>
+
+    <input type=number name=stockmin placeholder="Ingrese el minimo de stock " require><br>
+ 
+     <h2>PROVEEDOR</h2>  
+     <input type="text" name="proveedor"  placeholder="Cual es el proveedor" require >
+
+
+
+   <input type=number name="precio" 
    <input type=submit values="EnviarDatos"  requiere>
 
 </body>

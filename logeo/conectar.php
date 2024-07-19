@@ -1,5 +1,5 @@
 
-<php?
+<?php
 function conectar( ){
     $ser="localhost";
     $usr="root";
