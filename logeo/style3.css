@@ -3,11 +3,17 @@ body{
   background-color: antiquewhite;
   background:url("easyboton.jpg");
   color: darkred;
+  min-height: 100%;
   
+
+}
+
+html{
+  height: 100%;
 
 }
 h1{
   color: darkred;
   font-size: 30px;
-  
+
 }
