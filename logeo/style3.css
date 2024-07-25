@@ -13,10 +13,147 @@ html{
   height: 100%;
 
 }
+.title{
+  color: red;
+  background-color: red;
+  background: ;
+  font-size: 80px;
+  font-family:;
+}
 h1{
-  color: darkred;
-  font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+  font-size: 80px;
+  
+  background-color:;
+  background:;
+  font-family: 'Arial Narrow Bold' ;
+  font-style: italic;
 
 
 }
+
+h2{
+
+  font-size: medium;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+p{
+  font-size: 26px;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+
+*{
+  margin:0;
+  padding=0;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+   
+}
+
+main{
+ 
+   width:100%;
+   padding:20px;
+   margin:auto;
+   margin-top: 100px;
+
+}
+
+.contenedor{
+
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+
+}
+
+.caja__trasera-login{
+  top: -30px;
+  left: -10px;
+  height: 300px;
+  width: 100%;
+  padding:10px 20px;
+  display:;
+  justify-content: left;
+  -webkit-backdrop-filter: blur(10px);
+  background-color: red;
+  border-radius: 20px;
+  position: relative;
+
+}
+
+
+
+
+.caja__trasera  div{
+
+  margin: 100px 40px;
+  color: ;
+  transition: all 500ms ;
+  margin-top: 30px; 
+}
+
+.caja__trasera div h2{
+
+  font-weight: 400;
+  font-size: medium;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.caja__trasera button :hover{
+
+  background: white;
+  color: cornflowerblue;
+
+
+}
+
+.contenedor__login-register form{
+
+  width:250%;
+  padding: 80px 60px;
+  background-color: white;
+  right: -100px;
+  position: relative;
+  border-radius: 20px;
+
+}
+
+.contenedor__login-register{
+
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 380px;
+  position: relative;
+  top: -185px;
+  left: 10px;
+}
+
+.caja__trasera-register{
+
+  width: 200%;
+  padding: 80px 60px;
+  background-color: beige;
+  border-radius: 20px;
+
+
+}
+
+.contenedor__login-register  form input{
+
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 26px;
+  background-color: red;
+  color: black;
+  font-family: 'Times New Roman';
+  font-style: italic;
+
+
+}
+
+ 
