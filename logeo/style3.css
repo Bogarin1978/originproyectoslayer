@@ -159,15 +159,58 @@ main{
 .burbuja{
   width:80px;
   height: 80px;
-  background: yellow;
+  background: red;
   opacity: .3;
-  position: absolute;
+  position: relative;
   bottom: 0%;
   border-radius: 50%;
   
 
 
    }
+
+   @keyframes burbujas {
+ 
+    o%{
+      bottom:0;
+      opacity:0;
+       }
+       30%{
+         transform:translatex;
+         
+
+       }
+
+       50%{
+        opacity:.4;
+
+       }
+
+       100%{
+        bottom:100vh;
+
+       }
+
+
+   }
+
+   .burbuja:nth-child(1){
+
+    width:80px;
+    height:80px;
+    left: 5%;
+    animation-duration: 3s;   
+  }
+
+
+.burbuja:nth-child(2){
+
+    width:80px;
+    height:80px;
+    left: 35%;
+    animation-duration: 4s;   
+  }
+
 
 
 
