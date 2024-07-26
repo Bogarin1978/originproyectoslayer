@@ -156,4 +156,19 @@ main{
 
 }
 
+burbuja{
+  width:80px;
+  height: 80;
+  background: red;
+  opacity: .3;
+  position: absolute;
+  bottom: 0%;
+  border-radius: 50%;
+  animation: burbujas 3s linear infinite;
+
+
+   }
+
+
+
  
