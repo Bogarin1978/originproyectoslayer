@@ -158,7 +158,7 @@ main{
 
 .burbuja{
   width:80px;
-  height: 80;
+  height: 80px;
   background: yellow;
   opacity: .3;
   position: absolute;
