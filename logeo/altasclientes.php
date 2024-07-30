@@ -4,6 +4,8 @@ require "altasclientes.html";
 require "conectar.php";
 
 
+$connect=conectar();
+
 $rol=$_POST['userol'];
 $Nombre=$_POST['UseNombre'];
 $Apellido=$_POST['useApellido'];
@@ -17,7 +19,7 @@ $telefono=$_POST['usetelefono'];
 
 $sql="INSERT INTO (userol,useNombre,useApellido,useEmail,usepassword,useDireccion,uselocalidad,useprovincia,usetelefono) VALUES ($rol,$Nombre,$email,$password,$dir,$loc,$prov,$telefono)";
 
-$recordset=mysqli_query($conect,$sql);
+$recordset=mysqli_query($connect,$sql);
 
 $register=mysqli_fetch_assoc($recordset);
 echo "rol".$userol."Nombre".$Nombre."Apellido".$Apellido."Email".$email."clave".$password."Direccion".$dir."Localidad".$loc."Provincia".$prov."telefono".$telefono;

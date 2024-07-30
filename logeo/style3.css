@@ -6,6 +6,7 @@ body{
   min-height: 100%;
   
   
+  
 
 }
 
@@ -66,7 +67,7 @@ main{
   width: 100%;
   max-width: 800px;
   margin: auto;
-  position: relative;
+  position: absolute;
 
 }
 
@@ -74,7 +75,7 @@ main{
   top: -30px;
   left: -10px;
   height: 300px;
-  width: 100%;
+  width: 50%;
   padding:10px 20px;
   display:;
   justify-content: left;
@@ -82,7 +83,15 @@ main{
   background-color: red;
   border-radius: 20px;
   position: relative;
+  animation: flotar 3s linear infinite alternate;
 
+}
+
+@keyframes flotar{
+
+  to{
+    margin-top: 20vh;
+  }
 }
 
 
@@ -134,15 +143,31 @@ main{
 }
 
 .caja__trasera-register{
-
-  width: 200%;
+  
+  top: 30px;
+  animation:flotar 3s linear infinite alternate ;
+   width: 50%;
   height: 50%;
   padding: 80px 60px;
   background-color: red;
   border-radius: 20px;
+  display: flexbox;
+  position: absolute;
+  right: 50px;
+
 
 
 }
+@keyframes flotar{
+
+  to{
+    margin-top: 20vh;
+  }
+
+
+}
+
+
 
 .contenedor__login-register  form input{
 
@@ -163,9 +188,11 @@ main{
   background: red;
   opacity: .3;
   position: relative;
-  bottom: 0%;
+  display: flex;
+  
   border-radius: 50%;
   animation: burbujas 4s linear infinite;
+  bottom: 0;
 
 
    }
@@ -173,19 +200,25 @@ main{
    @keyframes burbujas {
  
     o%{
-      bottom:0;
-      opacity:0;
-       }
       
+      opacity:0;
+      
+       }
+       
+        
 
-       50%{
+       
+       
+        50%{
         opacity:.4;
+        
 
        }
 
        100%{
-        bottom:100 vh;
+        bottom:100vh;
         opacity:0;
+        
        }
 
 
@@ -196,6 +229,7 @@ main{
     width:80px;
     height:80px;
     left: 5%;
+    right: 0;
     animation-duration: 3s;   
   }
 
@@ -205,11 +239,38 @@ main{
     width:80px;
     height:80px;
     left: 35%;
-    animation-duration: 4s;   
+    right: 25%;
+    animation-duration: 4s; 
+      
+  }
+  .burbuja:nth-child(3){
+
+    width:80px;
+    height:80px;
+    left: 55%;
+    right: 50%;
+    animation-duration: 4s; 
+      
+  }
+
+  .burbuja:nth-child(4){
+
+    width:80px;
+    height:80px;
+    left: 75%;
+    right: 75%;
+    animation-duration: 4s; 
+      
   }
 
 
+  .burbuja:nth-child(5){
 
-
-
+    width:80px;
+    height:80px;
+    left: 90%;
+    right: 90%;
+    animation-duration: 4s;
+      
+  }
  
