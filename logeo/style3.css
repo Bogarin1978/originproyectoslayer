@@ -34,7 +34,7 @@ h1{
 
 h2{
 
-  font-size: medium;
+  font-size: larger;
   font-family: 'Times New Roman', Times, serif;
   color: white;
 }
@@ -136,8 +136,9 @@ main{
 .caja__trasera-register{
 
   width: 200%;
+  height: 50%;
   padding: 80px 60px;
-  background-color: beige;
+  background-color: red;
   border-radius: 20px;
 
 
@@ -206,6 +207,7 @@ main{
     left: 35%;
     animation-duration: 4s;   
   }
+
 
 
 

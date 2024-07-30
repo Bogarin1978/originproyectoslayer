@@ -1,4 +1,34 @@
 body{
 
     background-color: turquoise;
+    background: url(jacuzzi5.jpg);
+    background-size: contain;
+    font-size: 20px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+
+
+.formulario__altacliente{
+
+    width:50%;
+    height:150%;
+    border-radius: 20px;
+    background-color: transparent;
+
+
+
+  }
+  .contenedor_altacliente form input{
+padding:10px;
+margin-top: 5px;
+font-size: 20px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: beige;
+color: black;
+display: flexbox;
+
+
+
+  }
