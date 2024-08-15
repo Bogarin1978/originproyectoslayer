@@ -4,26 +4,56 @@ require "altasclientes.html";
 require "conectar.php";
 
 
-$connect=conectar();
+$ser="localhost";
+$usr="root";
+$pass="";
+$bdeasy="bdeasyhause";
+
+$conect = mysqli_connect($ser,$usr,$pass,$bdeasy) or die ( " No se conecta  a la base de datos" ) ;
+
+
+
+//$co=conectar();
+
+if(($conect)>0){
+    echo "conexion exitosa a la  base";
+
+}else{
+    echo "No hay conexion a la base";
+}
+
 
 $rol=$_POST['userol'];
-$Nombre=$_POST['UseNombre'];
+$Nombre=$_POST['useNombre'];
 $Apellido=$_POST['useApellido'];
 $email=$_POST['useEmail'];
 $password=$_POST['usepassword'];
-$dir=$_POST['useDireccion'];
+$dir=$_POST['usedireccion'];
 $loc=$_POST['uselocalidad'];
 $prov=$_POST['useprovincia'];
 $telefono=$_POST['usetelefono']; 
 
+//$connect=conectar();
 
-$sql="INSERT INTO (userol,useNombre,useApellido,useEmail,usepassword,useDireccion,uselocalidad,useprovincia,usetelefono) VALUES ($rol,$Nombre,$email,$password,$dir,$loc,$prov,$telefono)";
+$sql="INSERT INTO userhause (userol,useNombre,useApellido,useEmail,usepassword,usedireccion,uselocalidad,useprovincia,usetelefono) VALUES ('$rol','$Nombre','$Apellido','$email','$password','$dir','$loc','$prov','$telefono')";
 
-$recordset=mysqli_query($connect,$sql);
+$consulta="SELECT * FROM  userhause";
 
-$register=mysqli_fetch_assoc($recordset);
-echo "rol".$userol."Nombre".$Nombre."Apellido".$Apellido."Email".$email."clave".$password."Direccion".$dir."Localidad".$loc."Provincia".$prov."telefono".$telefono;
+$recordset=mysqli_query($conect,$sql);
 
+
+
+if($recordset>0){
+
+echo "Se cargo el cliente en base de datos__";
+
+echo "rol".$rol."Nombre".$Nombre."Apellido".$Apellido."Email".$email."clave".$password."Direccion".$dir."Localidad".$loc."Provincia".$prov."telefono".$telefono;
+
+}else{
+
+    echo "No se cargo el cliente";
+
+}
 
 
 

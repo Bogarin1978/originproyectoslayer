@@ -4,6 +4,7 @@ body{
   background:url("easyboton.jpg");
   color: darkred;
   min-height: 100%;
+  display: flow-root;
   
   
   
@@ -188,8 +189,8 @@ main{
   background: red;
   opacity: .3;
   position: relative;
-  display: flex;
-  
+  display: flexbox;
+  margin-left: 20px;
   border-radius: 50%;
   animation: burbujas 4s linear infinite;
   bottom: 0;
@@ -211,6 +212,7 @@ main{
        
         50%{
         opacity:.4;
+        margin-left:20px;
         
 
        }
@@ -224,53 +226,58 @@ main{
 
    }
 
-   .burbuja:nth-child(1){
+   .burbuja div:nth-child(1){
 
     width:80px;
     height:80px;
     left: 5%;
     right: 0;
-    animation-duration: 3s;   
+    animation-duration: 3s;
+    display: flex;  
   }
 
 
-.burbuja:nth-child(2){
+.burbuja div:nth-child(2){
 
     width:80px;
     height:80px;
     left: 35%;
     right: 25%;
     animation-duration: 4s; 
+    display: flex;
       
   }
-  .burbuja:nth-child(3){
+  .burbuja div:nth-child(3){
 
     width:80px;
     height:80px;
     left: 55%;
     right: 50%;
     animation-duration: 4s; 
+    display: flex;
       
   }
 
-  .burbuja:nth-child(4){
+  .burbuja div:nth-child(4){
 
     width:80px;
     height:80px;
     left: 75%;
     right: 75%;
     animation-duration: 4s; 
+    display: flex;
       
   }
 
 
-  .burbuja:nth-child(5){
+  .burbuja div:nth-child(5){
 
     width:80px;
     height:80px;
     left: 90%;
     right: 90%;
     animation-duration: 4s;
+    display: flex;
       
   }
  

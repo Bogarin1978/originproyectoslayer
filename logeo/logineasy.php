@@ -4,37 +4,38 @@ require "indexlogeo.html";
 require "conectar.php";
 
 
-$rol=$_post['rol']
+$rol=$_POST['rol'];
 $user=$_POST['email'];
 $password=$_POST['password'];
 
 
 
-$conn=conectar();
+$conect=conectar();
 
-$sql="select * from usereasy where useEmail='$user';";
+$sql="SELECT * FROM usereasy WHERE useEmail='$user'";
 
-$resultados=mysqli_query($conect, $sql);
+$resultado=mysqli_query($conect, $sql);
 
-if(mysqli_affected_rows($conn)>0){
-    $registro=mysqli_fecth_assoc($resultado);
+if(mysqli_affected_rows($sql)>0){
 
-    if($registro['passsord']==$password){
+    $registro=mysqli_fetch_assoc($resultado);
+
+    if($registro['usepasssord']==$password){
         
         session_start();
 
-        $_SESSION['id']=$registro['id'];
-        $_SESSION['nombre']=$registro['nombre']." ".$registro['apellido'];
-        $_SESSION['email']=$registro['email'];
-        $_SESSION['tipo']=$registro['rol'];
+        
+        
+        $_SESSION['email']=$registro['useEmail'];
+        $_SESSION['rol']=$registro['userol'];
 
-        swicth($_SESSION['rol']){
+        switch($_SESSION['rol']){
             case 1:
-                header("location: administradores.html")
+                header("location: administradores.html");
             break
 
             case 2:
-                header("location;clientes.html")
+                header("location;clientes.html");
             break
 
             case 3:
@@ -45,7 +46,7 @@ if(mysqli_affected_rows($conn)>0){
         }
     }
     else{
-        header("locatiion: index.php?badpass")
+        header("locatiion: index.php?badpass");
     }
 
 
