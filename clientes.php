@@ -1,3 +1,22 @@
+<?php
+start_session();
+
+if(isset($_SESSION['email'] && $_SESSION['rol']==2)){
+
+}
+else{
+    echo "Pagina Prohibida";
+    exit()
+}
+
+
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

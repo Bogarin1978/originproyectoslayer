@@ -1,4 +1,16 @@
+<?php
+session_start();
 
+if(isset($_SESSION['email'] && $_SESSION['rol']==1)){
+
+}
+else{
+    echo "Pagina Prohibida";
+    exit()
+}
+
+
+?>
 
 
 
@@ -278,7 +290,7 @@
 
 
 
-   <input type=number name="precio" 
+   <input type=number name="precio" >
    <input type=submit values="EnviarDatos"  requiere>
 
 </body>
