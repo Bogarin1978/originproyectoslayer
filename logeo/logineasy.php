@@ -1,16 +1,13 @@
 <?php
 SESSION_START();
-require "indexlogeo.html";
-require "conectar.php";
+
+require 'indexlogeo.html';
+include 'conectar.php';
 
 
+$conect;
 
-$ser="localhost";
-$usr="root";
-$pass="";
-$bdeasy="bdeasyhause";
 
-$conect = mysqli_connect ($ser,$usr,$pass,$bdeasy) or die ( " No se conecta  a la base de datos" ) ;
 
 if(($conect)>0){
     echo "conexion exitosa a la  base";
@@ -21,7 +18,7 @@ if(($conect)>0){
 
 
 
-$rol=$_POST['rol'];
+
 $user=$_POST['email'];
 $password=$_POST['password'];
 
@@ -29,7 +26,7 @@ mysqli_set_charset($conect,"utf8");
 
 
 
-$sql="SELECT * FROM userhause WHERE useEmail='$user' ";
+$sql="SELECT * FROM userhause WHERE useEmail='$user' and useRol = 2 ";
 
 $resultado=mysqli_query($conect, $sql);
 
@@ -42,63 +39,29 @@ if(mysqli_affected_rows($conect)>0){
 
         echo "Hola probando Inicio de sesion";
         
-        //session_start();
-        
-
         $_SESSION['email']=$registro['useEmail'];
-        $_SESSION['rol']=$registro['userol'];
-        echo "prueba nro de rol ".$_SESSION['rol'];
-
         
-        switch($_SESSION['rol']){
+       if($user==$registro['useEmail']){
 
-            case 1:
-
-                if($_SESSION['rol']==1){   
-                header("location: ../administradores.php");
-                   }else{
-                    echo "Error ";
-                   }
-            exit;
-            break;
-            
-
-            case 2:
-
-                if($_SESSION['rol']==2){  
-                header("location: ../clientes.php");
-                  }else{
-                    echo"Error";
-                  }
-            exit;
-            break;
-            
-
-            case 3:
-                            
-                default:
-                echo "algo esta mal";
-                exit;
-
-        }
-    }
-    else{
-        header("location: index.php?badpass");
-        exit;
-        
-    }
+         
+        header('Location: clientes.php');
 
 
+
+       }else{   
+              echo"Error de usuario";
+
+              header ("location: logineasy.php?nousuario='$usuario' ");
+          
+            }
+          
 
 
 
 }
-else{
-    header ("location: index.html?nousuario=$usuario");
-    exit;
+
     
  }
-
-
-
+    
+   
 ?>

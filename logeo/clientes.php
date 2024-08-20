@@ -1,13 +1,9 @@
 <?php
 start_session();
 
-if(isset($_SESSION['email'] && $_SESSION['rol']==2)){
+echo "Hola redirigio pantalla";
 
-}
-else{
-    echo "Pagina Prohibida";
-    exit()
-}
+
 
 
 
